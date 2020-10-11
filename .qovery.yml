@@ -1,0 +1,14 @@
+application:
+  name: hasura
+  project: qovery-api
+  cloud_region: aws/us-east-1
+databases:
+- type: postgresql
+  version: "11"
+  name: my-postgresql-database
+routers:
+- name: main
+  routes:
+  - application_name: hasura
+    paths:
+    - /*
